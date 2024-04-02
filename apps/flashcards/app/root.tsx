@@ -14,6 +14,10 @@ export const meta: MetaFunction = () => [
     title: 'New Remix App',
     viewport: 'width=device-width,initial-scale=1',
   },
+  { name: "mobile-web-app-capable", content: "yes" },
+  { name: "apple-mobile-web-app-capable", content: "yes" },
+  { name: "msapplication-starturl", content: "/" },
+  { name: "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no" }
 ];
 
 export default function App() {
@@ -22,6 +26,7 @@ export default function App() {
       <head>
         <Meta />
         <Links />
+        <link rel="manifest" href="manifest.json" />
       </head>
       <body>
         <Outlet />

@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export default {
   ignoredRouteFiles: ['**/.*'],
   // appDirectory: "app",
-  // assetsBuildDirectory: "public/build",
+  // assetsBuildDirectory: "public/build/assets",
   // serverBuildPath: "build/index.js",
   // publicPath: "/build/",
   watchPaths: () => createWatchPaths(__dirname),
