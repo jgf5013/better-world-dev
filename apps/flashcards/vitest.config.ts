@@ -2,13 +2,18 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import { VitePWA } from 'vite-plugin-pwa';
 
 
 export default defineConfig({
   root: __dirname,
   cacheDir: '../../node_modules/.vite/apps/flashcards',
 
-  plugins: [react(), nxViteTsPaths()],
+  plugins: [react(), nxViteTsPaths(), VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg'],
+    }),
+  ],
 
   test: {
     setupFiles: ['test-setup.ts'],

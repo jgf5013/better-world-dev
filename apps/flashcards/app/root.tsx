@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
+import { useEffect } from 'react';
 
 export const meta: MetaFunction = () => [
   {
@@ -20,7 +21,25 @@ export const meta: MetaFunction = () => [
   { name: "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no" }
 ];
 
+const registerServiceWorker = () => {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-workers/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered: ', registration);
+        })
+        .catch(registrationError => {
+          console.log('Service Worker registration failed: ', registrationError);
+        });
+    });
+  }
+}
+
+
 export default function App() {
+  useEffect(() => {
+    registerServiceWorker();
+  }, []);
   return (
     <html lang="en">
       <head>

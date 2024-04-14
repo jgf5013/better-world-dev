@@ -2,7 +2,6 @@
   "extends": "./tsconfig.json",
   "include": [
     "remix.env.d.ts",
-    "service-workers/service-worker.ts",
     "app/**/*.ts",
     "app/**/*.tsx",
     "app/**/*.js",
