@@ -7,7 +7,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/flashcards',
+  cacheDir: '../../node_modules/.vite/web/apps/flashcards',
 
   plugins: [react(), nxViteTsPaths(), VitePWA({
       registerType: 'autoUpdate',
@@ -26,7 +26,7 @@ export default defineConfig({
 
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../../coverage/apps/flashcards',
+      reportsDirectory: '../../coverage/web/apps/flashcards',
       provider: 'v8',
     },
   },

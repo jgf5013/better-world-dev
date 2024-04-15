@@ -1,10 +1,5 @@
-/*
- * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- This is a starter component and can be deleted.
- * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- Delete this file and get started with your project!
- * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- */
+import { Flashcard } from "@better-word-dev/elements";
+
 export function NxWelcome({ title }: { title: string }) {
   return (
     <>
@@ -423,6 +418,7 @@ export function NxWelcome({ title }: { title: string }) {
           `,
         }}
       />
+      <Flashcard />
       <div className="wrapper">
         <div className="container">
           <div id="welcome">

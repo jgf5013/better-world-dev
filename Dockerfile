@@ -10,7 +10,7 @@ COPY . .
 RUN npm ci
 RUN npx nx run flashcards:build
 
-# COPY /bwd/apps/flashcards ./
+# COPY /bwd/web/apps/flashcards ./
 # RUN npm ci --only=production
 
 CMD ["npx", "nx", "run", "flashcards:start"]
