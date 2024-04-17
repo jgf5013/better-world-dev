@@ -4,8 +4,9 @@ permissions:
   actions: read
   contents: read
 on:
-  release:
-    types: [ published ]
+  push:
+    branches:
+      - 'main'
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 defaults:
