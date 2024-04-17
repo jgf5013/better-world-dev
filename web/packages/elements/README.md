@@ -1,6 +1,6 @@
 # elements
 
-This library was generated with `nx generate library web/packages/elements`
+This library was generated with `nx generate @nx/remix:library web/packages/elements`
 Generate components with `nx generate @nx/remix:component web/packages/elements/component-name`
 
 ## Running unit tests
