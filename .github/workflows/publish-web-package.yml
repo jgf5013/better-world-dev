@@ -4,9 +4,8 @@ permissions:
   actions: read
   contents: read
 on:
-  push:
-    branches:
-      - 'main'
+  release
+
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 defaults:
@@ -16,15 +15,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
         with:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm publish --access public
+      - name: NPM Install
+        run: npm ci
+      - name: NPM Publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-# bump the package version automatically using this command:
-# npm version [patch | minor | major]
