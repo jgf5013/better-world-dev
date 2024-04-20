@@ -4,6 +4,9 @@
   "packages": {
     "web/packages/elements": {
       "release-type": "node"
+    },
+    "web/packages/game": {
+      "release-type": "node"
     }
   }
 }

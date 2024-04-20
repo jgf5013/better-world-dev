@@ -18,7 +18,9 @@
       "@better-word-dev/elements": ["web/packages/elements/src/index.ts"],
       "@better-word-dev/elements/server": [
         "web/packages/elements/src/server.ts"
-      ]
+      ],
+      "web/packages/game": ["web/packages/game/src/index.ts"],
+      "web/packages/game/server": ["web/packages/game/src/server.ts"]
     }
   },
   "exclude": ["node_modules", "tmp", "build"]
