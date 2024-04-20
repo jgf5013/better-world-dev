@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/jgf5013/better-world-dev/compare/elements-v1.1.0...elements-v1.2.0) (2024-04-20)
+
+
+### Features
+
+* country change ([181b10c](https://github.com/jgf5013/better-world-dev/commit/181b10c49660527c74008d91b4f1e42c43ea5f49))
+* country change II ([259c192](https://github.com/jgf5013/better-world-dev/commit/259c19214f189feb0add769ffe0245ce3bc9455f))
+* country change III ([e3e003b](https://github.com/jgf5013/better-world-dev/commit/e3e003bea7684c5d60da82b22f5871a61f8f528c))
+* Iran ([6fa626b](https://github.com/jgf5013/better-world-dev/commit/6fa626bf2dec34df07bd485df76898ee64ad3394))
+* playing around with configuration ([7f49627](https://github.com/jgf5013/better-world-dev/commit/7f496277df349f96e43a2fbf8a0da39a77ff3225))
+* playing with configs again ([0fd7354](https://github.com/jgf5013/better-world-dev/commit/0fd7354b42274e6c83cbe47771129faf47a8c844))
+
 ## [1.1.0](https://github.com/jgf5013/better-world-dev/compare/elements-v1.0.1...elements-v1.1.0) (2024-04-20)
 
 
