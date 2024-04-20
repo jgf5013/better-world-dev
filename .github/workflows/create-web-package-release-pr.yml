@@ -17,4 +17,6 @@ jobs:
         with:
           release-type: node
           path: web/packages/elements
-          skip-github-release: true
+          include-component-in-tag: true
+          # skip-github-release: true
+          # skip-github-pull-request: true
