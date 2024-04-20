@@ -5,6 +5,25 @@
 
 ### Features
 
+* country change ([181b10c](https://github.com/jgf5013/better-world-dev/commit/181b10c49660527c74008d91b4f1e42c43ea5f49))
+* country change II ([259c192](https://github.com/jgf5013/better-world-dev/commit/259c19214f189feb0add769ffe0245ce3bc9455f))
+* country change III ([e3e003b](https://github.com/jgf5013/better-world-dev/commit/e3e003bea7684c5d60da82b22f5871a61f8f528c))
+* switzerland ([79c6b90](https://github.com/jgf5013/better-world-dev/commit/79c6b9057c6d543f3ef9704a7ad65fe8afc34c6f))
+
+
+### Bug Fixes
+
+* country change ([41513c4](https://github.com/jgf5013/better-world-dev/commit/41513c4dae29dd6fcc82d54b7fc2b91267bf091b))
+* making a change to flashcard component ([8159e50](https://github.com/jgf5013/better-world-dev/commit/8159e5076c10b9cb115f3aaec7d3665fed89fec6))
+* nottin but mutton ([3291d57](https://github.com/jgf5013/better-world-dev/commit/3291d570e08e190eed7e6d28abaf96e703293758))
+* now we eat veggies ([cbdb0fd](https://github.com/jgf5013/better-world-dev/commit/cbdb0fd35724500c6f9c3aef3a3187568e685434))
+* some change ([5902247](https://github.com/jgf5013/better-world-dev/commit/5902247a72e1a3f3a1d7017c56acd78ba1218413))
+
+## [1.1.0](https://github.com/jgf5013/better-world-dev/compare/elements-v1.0.1...elements-v1.1.0) (2024-04-20)
+
+
+### Features
+
 * switzerland ([79c6b90](https://github.com/jgf5013/better-world-dev/commit/79c6b9057c6d543f3ef9704a7ad65fe8afc34c6f))
 
 
