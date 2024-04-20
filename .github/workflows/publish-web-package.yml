@@ -16,10 +16,6 @@ jobs:
     if: ${{ contains(github.head_ref, 'release-please--branches--main--') }}
     runs-on: ubuntu-latest
     steps:
-      - name: Echo
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
       - name: Checkout Code
         uses: actions/checkout@v4
       - name: Setup NodeJS
@@ -33,3 +29,7 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Echo
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"

@@ -7,11 +7,7 @@ on:
   push:
     branches:
       - main
-# defaults:
-#   run:
-#     working-directory: web/packages/elements
 
-# Q: does this create the release and open a pull request or is the release only created after the PR is merged in??
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,4 +19,4 @@ jobs:
             
       - name: Create Release
         uses: google-github-actions/release-please-action@v4
-        if: ${{ !startsWith(github.ref, 'release-please--branches--main--') }}
+        if: ${{ !contains(github.head_ref, 'release-please--branches--main--') }}
