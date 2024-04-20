@@ -8,6 +8,7 @@ on:
     branches:
       - main
 
+# Q: does this create the release and open a pull request or is the release only created after the PR is merged in??
 jobs:
   build:
     runs-on: ubuntu-latest
