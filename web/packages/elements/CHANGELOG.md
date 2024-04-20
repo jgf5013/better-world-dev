@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/jgf5013/better-world-dev/compare/elements-v2.1.0...elements-v2.2.0) (2024-04-20)
+
+
+### Features
+
+* austria ([b77397a](https://github.com/jgf5013/better-world-dev/commit/b77397a3a2de1977570aeae0ff1cf7edafae67c6))
+
 ## [2.1.0](https://github.com/jgf5013/better-world-dev/compare/elements-v2.0.0...elements-v2.1.0) (2024-04-20)
 
 
