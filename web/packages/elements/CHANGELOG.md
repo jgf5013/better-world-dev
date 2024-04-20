@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/jgf5013/better-world-dev/compare/elements-v1.2.0...elements-v2.0.0) (2024-04-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* holy moly I suck at spelling
+
+### Features
+
+* holy moly I suck at spelling ([878f173](https://github.com/jgf5013/better-world-dev/commit/878f173ee3649586b9524c922b50a2a009a92633))
+* playing with configs again ([8171696](https://github.com/jgf5013/better-world-dev/commit/81716966d33cd5a07cae9ca448a7150764f6a2c7))
+
 ## [1.2.0](https://github.com/jgf5013/better-world-dev/compare/elements-v1.1.0...elements-v1.2.0) (2024-04-20)
 
 
