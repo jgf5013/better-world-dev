@@ -18,21 +18,21 @@ jobs:
     steps:
       - name: Create Release
         uses: google-github-actions/release-please-action@v4
-        id: release
-      - name: Checkout Code
-        if: ${{ steps.release.outputs.releases_created }}
-        uses: actions/checkout@v4
-      - name: Setup NodeJS
-        if: ${{ steps.release.outputs.releases_created }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
-          registry-url: 'https://registry.npmjs.org'
-      - name: NPM Install
-        if: ${{ steps.release.outputs.releases_created }}
-        run: npm ci
-      - name: NPM Publish
-        if: ${{ steps.release.outputs.releases_created }}
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        # id: release
+      # - name: Checkout Code
+      #   if: ${{ steps.release.outputs.releases_created }}
+      #   uses: actions/checkout@v4
+      # - name: Setup NodeJS
+      #   if: ${{ steps.release.outputs.releases_created }}
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '18.x'
+      #     registry-url: 'https://registry.npmjs.org'
+      # - name: NPM Install
+      #   if: ${{ steps.release.outputs.releases_created }}
+      #   run: npm ci
+      # - name: NPM Publish
+      #   if: ${{ steps.release.outputs.releases_created }}
+      #   run: npm publish --access public
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
