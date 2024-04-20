@@ -14,11 +14,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v4
-        id: release
-        if: ${{ !steps.release.outputs.release_created }}
-        with:
-          release-type: node
-          path: web/packages/elements
-          include-component-in-tag: true
-          # skip-github-release: true
-          # skip-github-pull-request: true

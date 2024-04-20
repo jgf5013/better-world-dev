@@ -1,0 +1,9 @@
+{
+  "separate-pull-requests": true,
+  "include-component-in-tag": true,
+  "packages": {
+    "web/packages/elements": {
+      "release-type": "node"
+    }
+  }
+}
