@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.0...elements-v2.2.1) (2024-04-20)
+
+
+### Bug Fixes
+
+* I'm learning!... ([67b6dae](https://github.com/jgf5013/better-world-dev/commit/67b6dae6fad261fcccf40aca68cbaec5570fe3b2))
+
 ## [2.2.0](https://github.com/jgf5013/better-world-dev/compare/elements-v2.1.0...elements-v2.2.0) (2024-04-20)
 
 
