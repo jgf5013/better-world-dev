@@ -21,6 +21,7 @@ jobs:
         id: release
         with:
           release-type: node
+          path: web/packages/elements
       - name: Checkout Code
         uses: actions/checkout@v4
         # these if statements ensure that a publication only occurs when
