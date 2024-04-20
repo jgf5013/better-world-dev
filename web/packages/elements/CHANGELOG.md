@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.2](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.1...elements-v2.2.2) (2024-04-20)
+
+
+### Bug Fixes
+
+* Nicaragua ([2808500](https://github.com/jgf5013/better-world-dev/commit/28085001ff5e0725e50a0ebd58364ca54def583f))
+
 ## [2.2.1](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.0...elements-v2.2.1) (2024-04-20)
 
 
