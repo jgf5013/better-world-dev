@@ -6,7 +6,7 @@ export type FlashcardProps = {}
 const Flashcard = (props: FlashcardProps) => {
   return (
     <div className={styles['container']}>
-      <h1>Afghanistan</h1>
+      <h1>The Netherlands</h1>
     </div>
   );
 };
