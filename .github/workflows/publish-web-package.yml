@@ -4,7 +4,11 @@ name: Publish Package to NPM
 #   contents: write
 #   pull-requests: write
 on:
-  fork
+  pull_request:
+    branches:
+      - release-please--branches--main--*
+    types:
+      [closed]
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -16,15 +20,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
+        if: ${{ steps.release.outputs.releases_created }}
         uses: actions/checkout@v4
       - name: Setup NodeJS
+        if: ${{ steps.release.outputs.releases_created }}
         uses: actions/setup-node@v4
         with:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
       - name: NPM Install
+        if: ${{ steps.release.outputs.releases_created }}
         run: npm ci
       - name: NPM Publish
+        if: ${{ steps.release.outputs.releases_created }}
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
