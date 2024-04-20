@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/jgf5013/better-world-dev/compare/elements-v2.0.0...elements-v2.1.0) (2024-04-20)
+
+
+### Features
+
+* norway ([980e43c](https://github.com/jgf5013/better-world-dev/commit/980e43caae4ae614b2bf26b38ba842ac6bf2acef))
+
 ## [2.0.0](https://github.com/jgf5013/better-world-dev/compare/elements-v1.2.0...elements-v2.0.0) (2024-04-20)
 
 
