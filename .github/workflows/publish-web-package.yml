@@ -1,14 +1,10 @@
 name: Publish Package to NPM
 
-# permissions:
-#   contents: write
-#   pull-requests: write
 on:
   pull_request:
     branches:
-      - release-please--branches--main--*
-    types:
-      [closed]
+      - main
+    types: [closed]
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -17,8 +13,13 @@ defaults:
     working-directory: web/packages/elements
 jobs:
   build:
+    if: ${{ contains(github.head_ref, 'release-please--branches--main--') }}
     runs-on: ubuntu-latest
     steps:
+      - name: Echo
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - name: Checkout Code
         uses: actions/checkout@v4
       - name: Setup NodeJS
