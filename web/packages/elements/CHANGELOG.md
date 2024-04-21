@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.5](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.4...elements-v2.2.5) (2024-04-21)
+
+
+### Bug Fixes
+
+* country 3 ([47fdb15](https://github.com/jgf5013/better-world-dev/commit/47fdb15114b1cec532654dcb0e9fcb2603ff3ab6))
+
 ## [2.2.4](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.3...elements-v2.2.4) (2024-04-21)
 
 
