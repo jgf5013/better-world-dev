@@ -20,6 +20,10 @@ jobs:
       id: release
     # - name: send to output
     #   run: echo "release-please-output=${{}}" >> "$GITHUB_OUTPUT"
+    - name: Echo github
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
     
   publish:
     runs-on: ubuntu-latest
