@@ -24,7 +24,7 @@ jobs:
       env:
         PATHS_RELEASED: ${{steps.release.outputs.paths_released}}
       run: |
-        echo "paths_released=$(echo "$PATHS_RELEASED" | jq -r 'tostring') >> $GITHUB_OUTPUT
+        echo "paths_released=$(echo "$PATHS_RELEASED" | jq -r 'tostring')" >> $GITHUB_OUTPUT
         echo "releases_created=${{steps.release.outputs.releases_created}}" >> $GITHUB_OUTPUT
     
   publish:
