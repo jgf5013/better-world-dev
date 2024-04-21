@@ -13,12 +13,13 @@ jobs:
   create-release:
     runs-on: ubuntu-latest
     outputs:
-      release-please: ${{ steps.release.outputs.release-please-output }}
+      release-please: ${{ steps.release-output.outputs.release-please-output }}
     steps:
     - name: release please
       uses: google-github-actions/release-please-action@v4
       id: release
     - name: send to output
+      id: release-output
       run: echo "release-please-output=${{steps.release.outputs}}" >> "$GITHUB_OUTPUT"
     - name: Echo github
       env:
