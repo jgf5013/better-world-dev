@@ -6,7 +6,7 @@ export interface GameProps {}
 export function Game(props: GameProps) {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to Game 1!</h1>
+      <h1>Welcome to Game 2!</h1>
     </div>
   );
 }
