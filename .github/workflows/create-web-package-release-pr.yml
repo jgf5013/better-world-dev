@@ -35,13 +35,12 @@ jobs:
         with:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
+        if: ${{ contains(github.head_ref, 'release-please--branches--main--') }}
       - name: NPM Install
         run: npm ci
+        if: ${{ contains(github.head_ref, 'release-please--branches--main--') }}
       - name: NPM Publish
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Echo
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
+        if: ${{ contains(github.head_ref, 'release-please--branches--main--') }}
