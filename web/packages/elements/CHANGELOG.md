@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.3](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.2...elements-v2.2.3) (2024-04-21)
+
+
+### Bug Fixes
+
+* game 7 ([c991508](https://github.com/jgf5013/better-world-dev/commit/c99150893d6ef3806c4e78708562713b22d42ce2))
+
 ## [2.2.2](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.1...elements-v2.2.2) (2024-04-20)
 
 
