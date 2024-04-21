@@ -31,9 +31,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: create-release
     if: ${{ needs.create-release.outputs.releases_created == 'true' }}
-    # strategy:
-    #   matrix:
-    #     dir: ${{ fromJson(needs.create-release.outputs.paths_released) }}
+    strategy:
+      matrix:
+        dir: ${{ fromJson(needs.create-release.outputs.paths_released) }}
     steps:
       - name: Echo need
         run: echo "$NEEDS_CONTEXT"
