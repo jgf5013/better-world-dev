@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       paths_released: ${{ steps.release-output.outputs.paths_released }}
+      releases_created: ${{ steps.release-output.outputs.releases_created }}
     steps:
     - name: release please
       uses: google-github-actions/release-please-action@v4
