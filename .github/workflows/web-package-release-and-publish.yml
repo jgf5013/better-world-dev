@@ -31,7 +31,7 @@ jobs:
     if: ${{ needs.create-release.outputs.releases_created == 'true' }}
     strategy:
       matrix:
-        dir: ${{ needs.create-release.outputs.paths_released }}
+        dir: ${{ fromJson(needs.create-release.outputs.paths_released) }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -41,10 +41,10 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
       - name: NPM Install
-        working-directory: ${{ fromJson(matrix.dir) }}
+        working-directory: ${{ matrix.dir }}
         run: npm ci
       - name: NPM Publish
-        working-directory: ${{ fromJson(matrix.dir) }}
+        working-directory: ${{ matrix.dir }}
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
