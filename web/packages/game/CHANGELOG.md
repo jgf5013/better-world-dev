@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/jgf5013/better-world-dev/compare/game-v1.0.1...game-v1.0.2) (2024-04-21)
+
+
+### Bug Fixes
+
+* game 3 ([bbc559a](https://github.com/jgf5013/better-world-dev/commit/bbc559aa3acb99a50cdd7768e91851d1ee303c47))
+
 ## [1.0.1](https://github.com/jgf5013/better-world-dev/compare/game-v1.0.0...game-v1.0.1) (2024-04-21)
 
 
