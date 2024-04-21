@@ -1,5 +1,7 @@
 name: Publish Package to NPM
 
+## Not running for now
+
 on:
   pull_request:
     branches:
