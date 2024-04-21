@@ -24,9 +24,9 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: create-release
-    strategy:
-      matrix:
-        path: ${{ needs.create-release.outputs.release.outputs.paths_released }}
+    # strategy:
+    #   matrix:
+    #     path: ${{ needs.create-release.outputs.release.outputs.paths_released }}
     steps:
       - name: Echo github
         env:
