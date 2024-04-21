@@ -28,7 +28,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: create-release
-    if: ${{ needs.create-release.outputs.releases_created }}
+    if: ${{ needs.create-release.outputs.releases_created == 'true' }}
     strategy:
       matrix:
         dir: ${{ needs.create-release.outputs.paths_released }}
