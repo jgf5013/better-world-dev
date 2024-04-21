@@ -1,4 +1,4 @@
-name: Create Release PR
+name: Release & Publish
 # Note: Ideally the publish steps would be a separate workflow from the release-please action but we need the steps.release.outputs information
 
 permissions:
@@ -12,8 +12,8 @@ on:
 jobs:
   create-release:
     runs-on: ubuntu-latest
-    outputs:
-      release-please: ${{ steps.release.outputs }}
+    # outputs:
+    #   release-please: ${{ steps.release.outputs }}
     steps:
     - name: release please
       uses: google-github-actions/release-please-action@v4
@@ -26,7 +26,7 @@ jobs:
     needs: create-release
     strategy:
       matrix:
-        path: ${{ needs.create-release.outputs.release-please.outputs.paths_released }}
+        path: ${{ needs.create-release.outputs.release.outputs.paths_released }}
     steps:
       - name: Echo github
         env:
@@ -40,20 +40,20 @@ jobs:
         env:
           RELEASE_CONTEXT: ${{ toJson(steps.release) }}
         run: echo "$RELEASE_CONTEXT"
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        # if: ${{ steps.release.outputs.releases_created }}
-      - name: Setup NodeJS
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
-          registry-url: 'https://registry.npmjs.org'
-        # if: ${{ steps.release.outputs.releases_created }}
-      - name: NPM Install
-        run: npm ci
-        # if: ${{ steps.release.outputs.releases_created }}
-      - name: NPM Publish
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        # if: ${{ steps.release.outputs.releases_created }}
+      # - name: Checkout Code
+      #   uses: actions/checkout@v4
+      #   # if: ${{ steps.release.outputs.releases_created }}
+      # - name: Setup NodeJS
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '18.x'
+      #     registry-url: 'https://registry.npmjs.org'
+      #   # if: ${{ steps.release.outputs.releases_created }}
+      # - name: NPM Install
+      #   run: npm ci
+      #   # if: ${{ steps.release.outputs.releases_created }}
+      # - name: NPM Publish
+      #   run: npm publish --access public
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #   # if: ${{ steps.release.outputs.releases_created }}
