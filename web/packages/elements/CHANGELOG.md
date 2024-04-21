@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.10](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.9...elements-v2.2.10) (2024-04-21)
+
+
+### Bug Fixes
+
+* package lock trouble? ([c64f356](https://github.com/jgf5013/better-world-dev/commit/c64f356049e063307505988a504e60e2185b5df1))
+
 ## [2.2.9](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.8...elements-v2.2.9) (2024-04-21)
 
 

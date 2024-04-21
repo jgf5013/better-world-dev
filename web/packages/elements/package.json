@@ -1,6 +1,6 @@
 {
   "name": "@better-world-dev/elements",
-  "version": "2.2.9",
+  "version": "2.2.10",
   "private": false,
   "devDependencies": {
     "@babel/core": "*",
