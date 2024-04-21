@@ -9,13 +9,39 @@ on:
     branches:
       - main
 
+# defaults:
+#   run:
+#     working-directory: web/packages/elements
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # - name: Echo
-      #   env:
-      #     GITHUB_CONTEXT: ${{ toJson(github) }}
-      #   run: echo "$GITHUB_CONTEXT"
+      - name: Echo github
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - name: Create Release
         uses: google-github-actions/release-please-action@v4
+        id: release
+      - name: Echo steps.release
+        env:
+          RELEASE_CONTEXT: ${{ toJson(steps.release) }}
+        run: echo "$RELEASE_CONTEXT"
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        if: ${{ contains(github.head_ref, 'release-please--branches--main--') }}
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: NPM Install
+        run: npm ci
+      - name: NPM Publish
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Echo
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
