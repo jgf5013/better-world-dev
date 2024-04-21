@@ -29,22 +29,26 @@ jobs:
     runs-on: ubuntu-latest
     needs: create-release
     if: ${{ needs.create-release.outputs.releases_created == 'true' }}
-    strategy:
-      matrix:
-        dir: ${{ fromJson(needs.create-release.outputs.paths_released) }}
+    # strategy:
+    #   matrix:
+    #     dir: ${{ fromJson(needs.create-release.outputs.paths_released) }}
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-      - name: Setup NodeJS
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
-          registry-url: 'https://registry.npmjs.org'
-      - name: NPM Install
-        working-directory: ${{ matrix.dir }}
-        run: npm ci
-      - name: NPM Publish
-        working-directory: ${{ matrix.dir }}
-        run: npm publish --access public
+      - name: Echo need
+        run: echo "$NEEDS_CONTEXT"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            NEEDS_CONTEXT: ${{ fromJson(needs.create-release.outputs.paths_released) }}
+      # - name: Checkout Code
+      #   uses: actions/checkout@v4
+      # - name: Setup NodeJS
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '18.x'
+      #     registry-url: 'https://registry.npmjs.org'
+      # - name: NPM Install
+      #   working-directory: ${{ matrix.dir }}
+      #   run: npm ci
+      # - name: NPM Publish
+      #   working-directory: ${{ matrix.dir }}
+      #   run: npm publish --access public
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
