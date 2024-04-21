@@ -31,7 +31,7 @@ jobs:
     if: ${{ needs.create-release.outputs.releases_created }}
     strategy:
       matrix:
-        dir: ${{ needs.create-release.outputs.paths_released }}
+        dir: ${{ fromJSON(needs.create-release.outputs.paths_released) }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
