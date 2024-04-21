@@ -21,8 +21,10 @@ jobs:
       id: release
     - name: send to output
       id: release-output
+      env:
+        PATHS_RELEASED: ${{steps.release.outputs.paths_released}}
       run: |
-        echo "paths_released=${{steps.release.outputs.paths_released}}" >> $GITHUB_OUTPUT
+        echo "paths_released=$(echo "$PATHS_RELEASED" | jq -r 'tostring') >> $GITHUB_OUTPUT
         echo "releases_created=${{steps.release.outputs.releases_created}}" >> $GITHUB_OUTPUT
     
   publish:
@@ -37,18 +39,18 @@ jobs:
         run: echo "$NEEDS_CONTEXT"
         env:
             NEEDS_CONTEXT: ${{ needs.create-release.outputs.paths_released }}
-      # - name: Checkout Code
-      #   uses: actions/checkout@v4
-      # - name: Setup NodeJS
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: '18.x'
-      #     registry-url: 'https://registry.npmjs.org'
-      # - name: NPM Install
-      #   working-directory: ${{ matrix.dir }}
-      #   run: npm ci
-      # - name: NPM Publish
-      #   working-directory: ${{ matrix.dir }}
-      #   run: npm publish --access public
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: NPM Install
+        working-directory: ${{ matrix.dir }}
+        run: npm ci
+      - name: NPM Publish
+        working-directory: ${{ matrix.dir }}
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
