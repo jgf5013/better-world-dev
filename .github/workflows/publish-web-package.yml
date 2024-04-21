@@ -13,7 +13,7 @@ defaults:
     working-directory: web/packages/elements
 jobs:
   build:
-    if: ${{ contains(github.head_ref, 'release-please--branches--main--') }}
+    if: ${{ contains(github.head_ref, 'release-please--branches--main--never-match') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
