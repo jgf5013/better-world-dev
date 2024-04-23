@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.12](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.11...elements-v2.2.12) (2024-04-23)
+
+
+### Bug Fixes
+
+* game 12 ([db4de24](https://github.com/jgf5013/better-world-dev/commit/db4de24784801090f8095d40e1e3a7bfc364066e))
+
 ## [2.2.11](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.10...elements-v2.2.11) (2024-04-23)
 
 
