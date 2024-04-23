@@ -47,6 +47,7 @@
     "vitest": "*"
   },
   "dependencies": {
+    "@radix-ui/themes": "^3.0.2",
     "@remix-run/node": "*",
     "@remix-run/react": "*",
     "@remix-run/serve": "*",
