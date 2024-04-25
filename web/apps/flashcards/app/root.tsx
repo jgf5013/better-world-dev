@@ -1,58 +1,34 @@
-import type { MetaFunction } from '@remix-run/node';
 import {
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
-} from '@remix-run/react';
-import { useEffect } from 'react';
+} from "@remix-run/react";
+import GameProvider from "./components/GameProvider";
 
-export const meta: MetaFunction = () => [
-  {
-    charset: 'utf-8',
-    title: 'New Remix App',
-    viewport: 'width=device-width,initial-scale=1',
-  },
-  { name: "mobile-web-app-capable", content: "yes" },
-  { name: "apple-mobile-web-app-capable", content: "yes" },
-  { name: "msapplication-starturl", content: "/" },
-  { name: "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no" }
-];
-
-const registerServiceWorker = () => {
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-workers/service-worker.js')
-        .then(registration => {
-          console.log('Service Worker registered: ', registration);
-        })
-        .catch(registrationError => {
-          console.log('Service Worker registration failed: ', registrationError);
-        });
-    });
-  }
-}
-
-
-export default function App() {
-  useEffect(() => {
-    registerServiceWorker();
-  }, []);
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <link rel="manifest" href="manifest.json" />
       </head>
       <body>
-        <Outlet />
+        {children}
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
       </body>
     </html>
+  );
+}
+
+export default function App() {
+  return (
+    <GameProvider>
+      <Outlet />
+    </GameProvider>
   );
 }
