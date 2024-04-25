@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/jgf5013/better-world-dev/compare/game-v1.0.6...game-v1.1.0) (2024-04-25)
+
+
+### Features
+
+* country 13 ([1201a21](https://github.com/jgf5013/better-world-dev/commit/1201a21e50bf72ebdd38bbd24a060ddd28281db5))
+* moved a bunch of shit around ([f1f6692](https://github.com/jgf5013/better-world-dev/commit/f1f6692b2bc101668d7b673d4cc1e91f3fec5b26))
+
 ## [1.0.6](https://github.com/jgf5013/better-world-dev/compare/game-v1.0.5...game-v1.0.6) (2024-04-21)
 
 
