@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.12...elements-v2.3.0) (2024-04-25)
+
+
+### Features
+
+* moved a bunch of shit around ([f1f6692](https://github.com/jgf5013/better-world-dev/commit/f1f6692b2bc101668d7b673d4cc1e91f3fec5b26))
+
 ## [2.2.12](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.11...elements-v2.2.12) (2024-04-23)
 
 
