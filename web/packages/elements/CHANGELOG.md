@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/jgf5013/better-world-dev/compare/elements-v2.3.0...elements-v2.3.1) (2024-04-27)
+
+
+### Bug Fixes
+
+* adding package-lock files back ([41113d3](https://github.com/jgf5013/better-world-dev/commit/41113d3c8c27cb0500fa0207c2e140e2119cc05e))
+
 ## [2.3.0](https://github.com/jgf5013/better-world-dev/compare/elements-v2.2.12...elements-v2.3.0) (2024-04-25)
 
 
