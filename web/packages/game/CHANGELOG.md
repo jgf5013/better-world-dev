@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/jgf5013/better-world-dev/compare/game-v1.2.0...game-v1.2.1) (2024-04-27)
+
+
+### Bug Fixes
+
+* adding package-lock files back ([41113d3](https://github.com/jgf5013/better-world-dev/commit/41113d3c8c27cb0500fa0207c2e140e2119cc05e))
+
 ## [1.2.0](https://github.com/jgf5013/better-world-dev/compare/game-v1.1.0...game-v1.2.0) (2024-04-25)
 
 
