@@ -1,8 +1,20 @@
 import { ReactNode, createContext, useState } from "react";
-import { FlashcardType } from "./Flashcard";
-// import geography from './geography.json';
+
 import quizData from  './tree-leaves.json';
 
+
+export type SideShown = 'question' | 'answer';
+export type QuestionType = 'image' | 'text';
+
+export type FlashcardType = {
+  id: string;
+  question: {
+    [Property in QuestionType]?: string
+  };
+  questionType: QuestionType;
+  answer: string;
+  sideShown: SideShown;
+}
 
 const flashcards = quizData as FlashcardType[];
 
