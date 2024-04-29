@@ -28,19 +28,16 @@ jobs:
     needs: create-release
     defaults:
       run:
+        shell: bash
         working-directory: ${{ matrix.dir }}
     if: ${{ needs.create-release.outputs.releases_created == 'true' }}
     strategy:
       matrix:
         dir: ${{ fromJson(needs.create-release.outputs.paths_released) }}
     steps:
-      - name: Echo need
-        run: echo "$NEEDS_CONTEXT"
-        env:
-          NEEDS_CONTEXT: ${{ needs.create-release.outputs.paths_released }}
-      - name: Checkout Code
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup NodeJS
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18.x
