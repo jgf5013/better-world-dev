@@ -46,6 +46,8 @@
     "vite": "*",
     "vitest": "*"
   },
+  "main": "./src/index.ts",
+  "dist": {},
   "dependencies": {
     "@remix-run/node": "*",
     "@remix-run/react": "*",
