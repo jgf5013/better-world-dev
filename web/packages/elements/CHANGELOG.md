@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/jgf5013/better-world-dev/compare/elements-v2.3.1...elements-v3.0.0) (2024-04-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* created new application, using css modules, moved a bunch of shit around, added questions about leaves
+
+### Features
+
+* created new application, using css modules, moved a bunch of shit around, added questions about leaves ([f978636](https://github.com/jgf5013/better-world-dev/commit/f97863621a25fa84e13e07cbf99265771906f326))
+
 ## [2.3.1](https://github.com/jgf5013/better-world-dev/compare/elements-v2.3.0...elements-v2.3.1) (2024-04-27)
 
 
