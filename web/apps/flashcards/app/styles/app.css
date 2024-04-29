@@ -8,7 +8,7 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  height: 95vh;
+  height: 100vh;
 }
 
 .flashcardContainer {
@@ -16,8 +16,8 @@
 }
 
 html {
-  --vandebron-gray: #333D47;
-  --vandebron-gray-lighten: #485563;
+  --vandebron-gray: #283048;
+  --vandebron-gray-lighten: #859398;
   --vandebron-white: #E6E6E6;
   --text-color: var(--vandebron-white);
 

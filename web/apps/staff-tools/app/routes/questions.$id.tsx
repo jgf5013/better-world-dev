@@ -22,8 +22,13 @@ export default function QuestionId() {
   
   if(!flashcard) { return; }
 
-  const handleOnAnswerBlur = (e: FocusEvent<HTMLInputElement>) => {
-    e.stopPropagation();
+  const handleOnAnswerChange = (e: FocusEvent<HTMLInputElement>, flashcard: FlashcardType) => {
+    console.log('questions.$id - handleOnAnswerChange...');
+    const { value: answer } = e.target;
+    updateFlashCard({
+      ...flashcard,
+      answer
+    });
   };
   
   const handleOnFlashcardClick = (card: FlashcardType) => {
@@ -37,7 +42,7 @@ export default function QuestionId() {
       <div className="row">
         <Flashcard card={flashcard} onClick={handleOnFlashcardClick} />
         <div className="column">
-          <input className="input" type="text" onBlur={handleOnAnswerBlur} value={flashcard?.question.text}/>
+          <input className="input" type="text" onChange={(e) => handleOnAnswerChange(e, flashcard)} value={flashcard?.answer}/>
         </div>
       </div>
   );
