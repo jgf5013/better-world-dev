@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/jgf5013/better-world-dev/compare/game-v1.2.1...game-v2.0.0) (2024-04-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* created new application, using css modules, moved a bunch of shit around, added questions about leaves
+
+### Features
+
+* created new application, using css modules, moved a bunch of shit around, added questions about leaves ([f978636](https://github.com/jgf5013/better-world-dev/commit/f97863621a25fa84e13e07cbf99265771906f326))
+
 ## [1.2.1](https://github.com/jgf5013/better-world-dev/compare/game-v1.2.0...game-v1.2.1) (2024-04-27)
 
 
