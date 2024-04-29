@@ -23,7 +23,6 @@ export default function QuestionId() {
   if(!flashcard) { return; }
 
   const handleOnAnswerChange = (e: FocusEvent<HTMLInputElement>, flashcard: FlashcardType) => {
-    console.log('questions.$id - handleOnAnswerChange...');
     const { value: answer } = e.target;
     updateFlashCard({
       ...flashcard,

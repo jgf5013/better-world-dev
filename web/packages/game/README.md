@@ -1,7 +1,3 @@
 # game
 
-This library was generated with [Nx](https://nx.dev).
-
-## Running unit tests
-
-Run `nx test game` to execute the unit tests via [Vitest](https://vitest.dev/).
+A demo library showing how to get the best of both worlds from a monorepo
