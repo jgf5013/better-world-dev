@@ -1,1 +1,1 @@
-export * from './lib/flashcard';
+export * from './lib/GameProvider';

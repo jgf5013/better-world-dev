@@ -1,7 +1,9 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { Flashcard } from '@better-world-dev/elements';
+import appStyles from '../styles/app.css?url';
+// import QuestionAndAnswer from "~/components/QuestionAndAnswer";
 import { GameContext } from "@better-world-dev/game";
 import { useContext } from "react";
+import { Flashcard } from "@better-world-dev/elements";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,11 +12,12 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+
 export default function Index() {
   
   const { flashcards } = useContext(GameContext);
   return (
-    <>
+    <> 
       {flashcards.map((card) => {
         return (
           <div key={`flashcard-${card.id}`} className="flashcardContainer">
@@ -26,5 +29,8 @@ export default function Index() {
   );
 }
 
+
+
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: appStyles },
 ];
