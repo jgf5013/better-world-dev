@@ -1,9 +1,9 @@
 import { Flashcard } from "@better-world-dev/elements";
-import { GameContext } from "@better-world-dev/game";
+import { FlashcardType, GameContext } from "@better-world-dev/game";
 import { LinksFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { useContext } from "react";
-// import { useLoaderData } from "@remix-run/react";
+import { FocusEvent, useContext } from "react";
+import questionsStyles from '../styles/questions.css?url';
 
 type QuestionsParamType = {
   id: string;
@@ -16,16 +16,38 @@ export const loader = ({ params }: { params: QuestionsParamType}): QuestionsPara
 
 type LoaderType = Awaited<ReturnType<typeof loader>>;
 export default function QuestionId() {
-  const { flashcards } = useContext(GameContext);
+  const { flashcards, updateFlashCard } = useContext(GameContext);
   const { id } = useLoaderData<LoaderType>();
   const flashcard = flashcards.find((f) => f.id === id);
+  
+  if(!flashcard) { return; }
+
+  const handleOnAnswerChange = (e: FocusEvent<HTMLInputElement>, flashcard: FlashcardType) => {
+    console.log('questions.$id - handleOnAnswerChange...');
+    const { value: answer } = e.target;
+    updateFlashCard({
+      ...flashcard,
+      answer
+    });
+  };
+  
+  const handleOnFlashcardClick = (card: FlashcardType) => {
+    updateFlashCard({
+      ...card,
+      sideShown: card.sideShown === 'question' ? 'answer' : 'question'
+    });
+  };
 
   return (
-    <div key={`flashcard-${id}`} className="flashcardContainer">
-      <Flashcard card={flashcard} />
-    </div>
+      <div className="row">
+        <Flashcard card={flashcard} onClick={handleOnFlashcardClick} />
+        <div className="column">
+          <input className="input" type="text" onChange={(e) => handleOnAnswerChange(e, flashcard)} value={flashcard?.answer}/>
+        </div>
+      </div>
   );
 }
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: questionsStyles }
 ];

@@ -1,27 +1,34 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import appStyles from '../styles/app.css?url';
-// import QuestionAndAnswer from "~/components/QuestionAndAnswer";
-import { GameContext } from "@better-world-dev/game";
+import { FlashcardType, GameContext } from "@better-world-dev/game";
 import { useContext } from "react";
 import { Flashcard } from "@better-world-dev/elements";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Staff Tools" },
+    { name: "description", content: "Ya know..." },
   ];
 };
 
 
 export default function Index() {
   
-  const { flashcards } = useContext(GameContext);
+  const { flashcards, updateFlashCard } = useContext(GameContext);
+  
+  const handleOnClick = (card: FlashcardType) => {
+    console.log('stafftools - _index - handleOnClick...');
+    updateFlashCard({
+      ...card,
+      sideShown: card.sideShown === 'question' ? 'answer' : 'question'
+    });
+  };
   return (
     <> 
       {flashcards.map((card) => {
         return (
           <div key={`flashcard-${card.id}`} className="flashcardContainer">
-            <Flashcard card={card} />
+            <Flashcard card={card} onClick={handleOnClick} />
           </div>
         );
       })}

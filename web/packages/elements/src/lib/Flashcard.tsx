@@ -1,39 +1,15 @@
-import type { LinksFunction } from "@remix-run/node";
-import styles from './Flashcard.module.css';
-import { useContext } from "react";
 import { Strong, Inset as RadixInset, Text as RadixText } from "@radix-ui/themes";
 import { Card } from '@better-world-dev/elements';
-import { GameContext } from '@better-world-dev/game';
-import React from "react";
-
-
-export type SideShown = 'question' | 'answer';
-export type QuestionType = 'image' | 'text';
-
-export type FlashcardType = {
-  id: string;
-  question: {
-    [Property in QuestionType]?: string
-  };
-  questionType: QuestionType;
-  answer: string;
-  sideShown: SideShown;
-}
+import { FlashcardType } from '@better-world-dev/game';
+import styles from './Flashcard.module.css';
 
 type FlashcardPropsType = {
   card: FlashcardType;
+  onClick: (FlascardType) => void;
 };
 
-export const Flashcard = ({card}: FlashcardPropsType) => {
+export const Flashcard = ({card, onClick}: FlashcardPropsType) => {
 
-  const { updateFlashCard } = useContext(GameContext);
-
-  const handleOnClick = () => {
-    updateFlashCard({
-      ...card,
-      sideShown: card.sideShown === 'question' ? 'answer' : 'question'
-    });
-  };
   const Inset = (
     <RadixInset clip="padding-box" side="top" pb="current">
       <img
@@ -51,7 +27,7 @@ export const Flashcard = ({card}: FlashcardPropsType) => {
   );
   return (
     <div className={styles.flashcard}>
-      <Card Inset={Inset} Text={Text} onClick={handleOnClick} />
+      <Card Inset={Inset} Text={Text} onClick={() => onClick(card)} />
     </div>
   );
 };
