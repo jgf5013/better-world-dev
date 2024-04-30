@@ -2,7 +2,7 @@ import { Flashcard } from "@better-world-dev/elements";
 import { FlashcardType, GameContext } from "@better-world-dev/game";
 import { LinksFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { FocusEvent, useContext } from "react";
+import { ChangeEvent, useContext } from "react";
 import questionsStyles from '../styles/questions.css?url';
 
 type QuestionsParamType = {
@@ -22,7 +22,8 @@ export default function QuestionId() {
   
   if(!flashcard) { return; }
 
-  const handleOnAnswerChange = (e: FocusEvent<HTMLInputElement>, flashcard: FlashcardType) => {
+  const handleOnAnswerChange = (e: ChangeEvent<HTMLInputElement>, flashcard: FlashcardType) => {
+    console.log('questions.$id - handleOnAnswerChange...');
     const { value: answer } = e.target;
     updateFlashCard({
       ...flashcard,
