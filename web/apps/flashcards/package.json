@@ -11,8 +11,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@better-world-dev/elements": "^3.0.1",
-    "@better-world-dev/game": "^2.1.0",
+    "@better-world-dev/elements": "^3.0.8",
+    "@better-world-dev/game": "^2.1.3",
     "@remix-run/css-bundle": "^2.9.1",
     "@remix-run/node": "^2.9.0",
     "@remix-run/react": "^2.9.0",

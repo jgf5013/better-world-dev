@@ -10,7 +10,9 @@ export default defineConfig({
   build: {
     lib: { entry: './src/index.ts', formats: ['es'] }
   },
-
+  // resolve: {
+  //   dedupe: ["react", "react-dom"]
+  // },
   test: {
     setupFiles: ['./src/test-setup.ts'],
     globals: true,
