@@ -9,11 +9,11 @@ type CardType = {
 
 export const Card = ({ Inset, Text, onClick }: CardType) => {
   return (
-      <Box maxWidth="240px" onClick={onClick}>
-        <RadixCard size="2">
-          <>{Inset}</>
-          <>{Text}</>
-        </RadixCard>
-      </Box>
+    <Box maxWidth="240px" onClick={onClick}>
+      <RadixCard size="2">
+        <>{Inset}</>
+        <>{Text}</>
+      </RadixCard>
+    </Box>
   );
 };
