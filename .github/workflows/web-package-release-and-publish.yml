@@ -44,7 +44,9 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: NPM Install
         run: npm ci
-      # - name: NPM Publish
-      #   run: npm publish --access public
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Build
+        run: npm build
+      - name: NPM Publish
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

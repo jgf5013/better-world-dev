@@ -1,17 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   root: __dirname,
   cacheDir: '../../../node_modules/.vite/web/packages/elements',
 
-  plugins: [react(), nxViteTsPaths()],
-
-  // Uncomment this if you are using workers.
-  // worker: {
-  //  plugins: [ nxViteTsPaths() ],
-  // },
+  plugins: [react(), dts()],
+  build: { lib: { entry: './src/index.ts', formats: ['es'] } },
 
   test: {
     setupFiles: ['./src/test-setup.ts'],
