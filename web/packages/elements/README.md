@@ -1,8 +1,3 @@
 # elements
 
-This library was generated with `nx generate @nx/remix:library web/packages/elements`
-Generate components with `nx generate @nx/remix:component web/packages/elements/component-name`
-
-## Running unit tests
-
-Run `nx test elements` to execute the unit tests via [Vitest](https://vitest.dev/).
+A demo library showing how to get the best of both worlds from a monorepo
