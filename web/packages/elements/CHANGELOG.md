@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.6](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.5...elements-v3.0.6) (2024-04-30)
+
+
+### Bug Fixes
+
+* added @radix-ui/themes to elements package ([9bcc97f](https://github.com/jgf5013/better-world-dev/commit/9bcc97fc18aba150e7a852f73620d1cf2d992548))
+
 ## [3.0.5](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.4...elements-v3.0.5) (2024-04-30)
 
 
