@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.10](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.9...elements-v3.0.10) (2024-04-30)
+
+
+### Bug Fixes
+
+* vite tired ([773b873](https://github.com/jgf5013/better-world-dev/commit/773b8737be82b62b61dbef28362dc4e279c1fa4f))
+
 ## [3.0.9](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.8...elements-v3.0.9) (2024-04-30)
 
 
