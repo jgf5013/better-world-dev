@@ -1,5 +1,5 @@
 import { Strong, Inset as RadixInset, Text as RadixText } from "@radix-ui/themes";
-import { Card } from '@better-world-dev/elements';
+import { Card } from './Card';
 import { FlashcardType } from '@better-world-dev/game';
 import styles from './Flashcard.module.css';
 

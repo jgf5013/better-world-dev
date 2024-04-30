@@ -39,6 +39,7 @@ const GameProvider = ({ children }: GameProviderType) => {
 
   const [ state, setState ] = useState<GameContextType>({ ...initialState });
 
+  console.trace('GameProvider...');
   const updateFlashCard = (updatedCard: FlashcardType) => {
     const newCards = [
       ...state.flashcards.map((exisitingCard) => exisitingCard.id === updatedCard.id ? updatedCard : exisitingCard)
