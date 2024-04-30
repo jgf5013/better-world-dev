@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.2](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.1...elements-v3.0.2) (2024-04-30)
+
+
+### Bug Fixes
+
+* px to rem ([324f3d1](https://github.com/jgf5013/better-world-dev/commit/324f3d122de9558c3c8aa0bb43d8e3f18d24af6e))
+
 ## [3.0.1](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.0...elements-v3.0.1) (2024-04-29)
 
 
