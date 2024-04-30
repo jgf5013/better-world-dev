@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.1...game-v2.1.2) (2024-04-30)
+
+
+### Bug Fixes
+
+* getting package.json set up ([baaef70](https://github.com/jgf5013/better-world-dev/commit/baaef705290f7048ef429bbdc3d53a48607dcb1c))
+
 ## [2.1.1](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.0...game-v2.1.1) (2024-04-30)
 
 
