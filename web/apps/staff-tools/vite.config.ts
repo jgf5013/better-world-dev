@@ -11,5 +11,8 @@ export default defineConfig({
     esbuildOptions: {
       jsx: "automatic",
     }
+  },
+  resolve: {
+    dedupe: ["react", "react-dom"]
   }
 });
