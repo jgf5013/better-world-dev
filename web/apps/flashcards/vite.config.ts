@@ -7,4 +7,9 @@ installGlobals();
 
 export default defineConfig({
   plugins: [remix(), tsconfigPaths()],
+  optimizeDeps: {
+    esbuildOptions: {
+      jsx: "automatic",
+    }
+  }
 });

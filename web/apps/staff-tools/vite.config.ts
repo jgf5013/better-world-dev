@@ -7,7 +7,9 @@ installGlobals();
 
 export default defineConfig({
   plugins: [remix(), tsconfigPaths()],
-  resolve: {
-    dedupe: ["react", "react-dom"]
+  optimizeDeps: {
+    esbuildOptions: {
+      jsx: "automatic",
+    }
   }
 });
