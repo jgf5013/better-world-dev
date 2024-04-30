@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.4](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.3...elements-v3.0.4) (2024-04-30)
+
+
+### Bug Fixes
+
+* getting package.json set up ([baaef70](https://github.com/jgf5013/better-world-dev/commit/baaef705290f7048ef429bbdc3d53a48607dcb1c))
+
 ## [3.0.3](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.2...elements-v3.0.3) (2024-04-30)
 
 
