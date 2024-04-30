@@ -11,7 +11,6 @@ type QuestionsParamType = {
 
 export const loader = ({ params }: { params: QuestionsParamType}): QuestionsParamType => {
   const { id } = params;
-  console.log('questions.$id...');
   return { id };
 };
 
@@ -24,7 +23,6 @@ export default function QuestionId() {
   if(!flashcard) { return; }
 
   const handleOnAnswerChange = (e: ChangeEvent<HTMLInputElement>, flashcard: FlashcardType) => {
-    console.log('questions.$id - handleOnAnswerChange...');
     const { value: answer } = e.target;
     updateFlashCard({
       ...flashcard,
