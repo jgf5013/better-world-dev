@@ -2,7 +2,6 @@ import { ReactNode, createContext, useState } from "react";
 
 import quizData from  './tree-leaves.json';
 
-
 export type SideShown = 'question' | 'answer';
 export type QuestionType = 'image' | 'text';
 
@@ -39,7 +38,6 @@ const GameProvider = ({ children }: GameProviderType) => {
 
   const [ state, setState ] = useState<GameContextType>({ ...initialState });
 
-  console.trace('GameProvider...');
   const updateFlashCard = (updatedCard: FlashcardType) => {
     const newCards = [
       ...state.flashcards.map((exisitingCard) => exisitingCard.id === updatedCard.id ? updatedCard : exisitingCard)
