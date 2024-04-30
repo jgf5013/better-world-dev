@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.4](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.3...game-v2.1.4) (2024-04-30)
+
+
+### Bug Fixes
+
+* automatic jsx ([5087679](https://github.com/jgf5013/better-world-dev/commit/50876795868668c85f611dab74ec7c3f9a00c9c6))
+
 ## [2.1.3](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.2...game-v2.1.3) (2024-04-30)
 
 
