@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.5](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.4...elements-v3.0.5) (2024-04-30)
+
+
+### Bug Fixes
+
+* npm run build ([a0fc6a5](https://github.com/jgf5013/better-world-dev/commit/a0fc6a5bff90309133c738cf14d849f4f9b8936d))
+
 ## [3.0.4](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.3...elements-v3.0.4) (2024-04-30)
 
 
