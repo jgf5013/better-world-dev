@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.5](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.4...game-v2.1.5) (2024-04-30)
+
+
+### Bug Fixes
+
+* vite tired ([773b873](https://github.com/jgf5013/better-world-dev/commit/773b8737be82b62b61dbef28362dc4e279c1fa4f))
+
 ## [2.1.4](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.3...game-v2.1.4) (2024-04-30)
 
 
