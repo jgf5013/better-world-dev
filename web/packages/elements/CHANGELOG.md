@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.9](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.8...elements-v3.0.9) (2024-04-30)
+
+
+### Bug Fixes
+
+* automatic jsx ([5087679](https://github.com/jgf5013/better-world-dev/commit/50876795868668c85f611dab74ec7c3f9a00c9c6))
+* updated package version ([81bb1b4](https://github.com/jgf5013/better-world-dev/commit/81bb1b4b14179ea8e9b461aa7c6c277fc4edbb45))
+
 ## [3.0.8](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.7...elements-v3.0.8) (2024-04-30)
 
 
