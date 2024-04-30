@@ -7,11 +7,20 @@ export default defineConfig({
   cacheDir: '../../../node_modules/.vite/web/packages/elements',
 
   plugins: [react(), dts()],
-  build: { lib: { entry: './src/index.ts', formats: ['es'] } },
-  // resolve: {
-  //   dedupe: ["react", "react-dom"]
-  // },
-
+  build: {
+    lib: { entry: './src/index.ts', formats: ['es'] },
+    rollupOptions: {
+      external: ['react', 'react-dom']
+    }
+  },
+  resolve: {
+    dedupe: ["react", "react-dom"]
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      jsx: "automatic",
+    }
+  },
   test: {
     setupFiles: ['./src/test-setup.ts'],
     globals: true,

@@ -8,11 +8,19 @@ export default defineConfig({
 
   plugins: [react(), dts()],
   build: {
-    lib: { entry: './src/index.ts', formats: ['es'] }
+    lib: { entry: './src/index.ts', formats: ['es'] },
+    rollupOptions: {
+      external: ['react', 'react-dom']
+    }
   },
-  // resolve: {
-  //   dedupe: ["react", "react-dom"]
-  // },
+  optimizeDeps: {
+    esbuildOptions: {
+      jsx: "automatic",
+    }
+  },
+  resolve: {
+    dedupe: ["react", "react-dom"]
+  },
   test: {
     setupFiles: ['./src/test-setup.ts'],
     globals: true,
