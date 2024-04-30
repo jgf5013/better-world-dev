@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/jgf5013/better-world-dev/compare/game-v2.0.0...game-v2.1.0) (2024-04-29)
+
+
+### Features
+
+* Staff can change the answer now ([b30cd92](https://github.com/jgf5013/better-world-dev/commit/b30cd92b73068fa20e71f434483a610fb14434d2))
+
+
+### Bug Fixes
+
+* both things working now ([d4b790d](https://github.com/jgf5013/better-world-dev/commit/d4b790dd285bd72cfcbdc13226c27d332a63d7cd))
+
 ## [2.0.0](https://github.com/jgf5013/better-world-dev/compare/game-v1.2.1...game-v2.0.0) (2024-04-29)
 
 
