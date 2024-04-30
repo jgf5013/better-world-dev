@@ -21,7 +21,7 @@ export const Flashcard = ({card, onClick}: FlashcardPropsType) => {
   const Text = (
     <div className={styles.text}>
       <RadixText as="p" size="3">
-        <Strong>{card.sideShown === 'question' ? 'Name' : card.answer}</Strong>
+        <Strong>{card.sideShown === 'question' ? 'Name A' : card.answer}</Strong>
       </RadixText>
     </div>
   );
