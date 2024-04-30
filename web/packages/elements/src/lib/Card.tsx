@@ -9,7 +9,7 @@ type CardType = {
 
 export const Card = ({ Inset, Text, onClick }: CardType) => {
   return (
-    <Box maxWidth="240px" onClick={onClick}>
+    <Box maxWidth="15rem" onClick={onClick}>
       <RadixCard size="2">
         <>{Inset}</>
         <>{Text}</>
