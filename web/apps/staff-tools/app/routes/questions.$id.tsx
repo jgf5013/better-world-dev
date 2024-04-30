@@ -11,6 +11,7 @@ type QuestionsParamType = {
 
 export const loader = ({ params }: { params: QuestionsParamType}): QuestionsParamType => {
   const { id } = params;
+  console.log('questions.$id...');
   return { id };
 };
 
