@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.3](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.2...game-v2.1.3) (2024-04-30)
+
+
+### Bug Fixes
+
+* publish game package ([4d4c289](https://github.com/jgf5013/better-world-dev/commit/4d4c2897598d80dbae40a53539fd28897ba190bc))
+
 ## [2.1.2](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.1...game-v2.1.2) (2024-04-30)
 
 
