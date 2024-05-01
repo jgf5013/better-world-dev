@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.11](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.10...elements-v3.0.11) (2024-05-01)
+
+
+### Bug Fixes
+
+* update ([7b17fc3](https://github.com/jgf5013/better-world-dev/commit/7b17fc34e21c3f8327a68f439f9dd3c6acdd85bc))
+
 ## [3.0.10](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.9...elements-v3.0.10) (2024-04-30)
 
 
