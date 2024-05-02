@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.6](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.5...game-v2.1.6) (2024-05-02)
+
+
+### Bug Fixes
+
+* tree name ([ab2847d](https://github.com/jgf5013/better-world-dev/commit/ab2847daea7dab51cd13c876b75f7edd9dea8268))
+
 ## [2.1.5](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.4...game-v2.1.5) (2024-04-30)
 
 
