@@ -1,6 +1,6 @@
 {
   "name": "@better-world-dev/game",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "private": false,
   "type": "module",
   "main": "./dist/game.js",
