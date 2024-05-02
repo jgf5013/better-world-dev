@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.12](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.11...elements-v3.0.12) (2024-05-02)
+
+
+### Bug Fixes
+
+* tree name ([715c110](https://github.com/jgf5013/better-world-dev/commit/715c11087ec6490723fa1631dd36032aba855af2))
+
 ## [3.0.11](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.10...elements-v3.0.11) (2024-05-01)
 
 
