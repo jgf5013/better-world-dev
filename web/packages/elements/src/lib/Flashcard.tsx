@@ -26,7 +26,7 @@ export const Flashcard = ({card, onClick}: FlashcardPropsType) => {
   const Text = (
     <div style={{ backgroundColor: "#859398", borderRadius: "0.15rem" }}>
       <RadixText as="p" size="3">
-        <Strong>{card.sideShown === 'question' ? 'Name' : card.answer}</Strong>
+        <Strong>{card.sideShown === 'question' ? 'Tree Name' : card.answer}</Strong>
       </RadixText>
     </div>
   );
