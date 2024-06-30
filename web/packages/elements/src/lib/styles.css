@@ -1,0 +1,42 @@
+/* dark mode */
+:root {
+  --background-rgba: 16, 55, 132, 0.85;
+  --border-rgba: 0, 0, 0, 0.5;
+  --foreground-rgba: 155, 175, 217, 0.67;
+  --text-color-rgba: 255, 255, 255, 0.67;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-rgb: 155, 175, 217, 0.67;
+    --foreground-rgba: 16, 55, 132, 0.85;
+  }
+}
+
+body {
+  background: rgba(var(--background-rgba));
+  color: rgba(var(--text-color-rgba));
+}
+
+
+#projectsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 250px;
+  height: 90%;
+}
+
+.typography {
+  font-family: fantasy;
+}
+
+p.typography {
+  font-size: smaller;
+}
+
+h5,
+p {
+  margin: 0.75rem;
+}

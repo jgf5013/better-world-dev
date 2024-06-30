@@ -13,8 +13,9 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
     "paths": {
+      "@better-world-dev/elements": ["./web/packages/elements/src"],
+      "@better-world-dev/game": ["./web/packages/game/src"]
     },
     "resolveJsonModule": true
   },
