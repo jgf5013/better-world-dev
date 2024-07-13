@@ -7,7 +7,7 @@
     "**/.server/**/*.tsx",
     "**/.client/**/*.ts",
     "**/.client/**/*.tsx"
-  ],
+, "../../packages/elements/src/lib/ThemeProvider/theme.tsx"  ],
   
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],

@@ -1,5 +1,10 @@
-import { LinksFunction } from "@remix-run/node";
-// import styles from "./styles.css?url";
+// import { LinksFunction } from "@remix-run/node";
+import { assignInlineVars } from '@vanilla-extract/dynamic';
+import { useContext } from "react";
+import * as styles from "./PortfolioCard.css";
+import { ThemeContext } from "../ThemeProvider";
+
+
 
 // export const links: LinksFunction = () => [
 //   { rel: "stylesheet", href: styles },
@@ -21,31 +26,34 @@ type Props = {
 };
 
 export const PortfolioCard = ({ link, img, title, subtext, index }: Props) => {
-  const goTo = (link: string): void => {
-    window.open(link);
-  };
+  
+  const [theme] = useContext(ThemeContext);
+
+
+  
   return (
     <div
-      className="card"
-      onClick={() => goTo(link)}
-      onKeyDown = {() => goTo(link)}
+      className={styles.cardStyle}
       role="button"
       tabIndex={index}
     >
-      <div className="m-4">
-        <div className="img-container">
-          <img
-            className="cardImg"
-            alt={img.alt}
-            src={img.src}
-            title={img.title}
-          />
+      <a href={link}>
+        <div className={styles.cardContainerStyle}>
+          <div>
+            <img
+              className={styles.cardImageStyle}
+              alt={img.alt}
+              src={img.src}
+              title={img.title}
+            />
+          </div>
+          <div>
+            <h5>{title}</h5>
+            <p className="typography">{subtext}</p>
+          </div>
         </div>
-        <div>
-          <h5>{title}</h5>
-          <p className="typography">{subtext}</p>
-        </div>
-      </div>
+      </a>
+        
     </div>
   );
 };

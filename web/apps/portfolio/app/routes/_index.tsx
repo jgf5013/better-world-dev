@@ -1,6 +1,8 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { PortfolioCard /*, links as portfolioCardLinks*/ } from "@better-world-dev/elements";
-// import { PortfolioCard, links as portfolioCardLinks } from "@better-world-dev/elements";
+import { PortfolioCard } from "@better-world-dev/elements";
+
+
+
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,14 +11,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-// export const links: LinksFunction = () => [
-//   ...portfolioCardLinks(),
-// ];
-
 export default function Index() {
-  const goTo = (link: string): void => {
-    window.open(link);
-  };
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24`}
@@ -25,32 +20,17 @@ export default function Index() {
         <h1 className="text-4xl typography">JOHN FISHER</h1>
         <div id="projectsContainer">
 
-        <div
-            className="card"
-            onClick={() =>
-              goTo("https://jgf5013.github.io/virus-visualization")
-            }
-            onKeyDown={() =>
-              goTo("https://jgf5013.github.io/virus-visualization")
-            }
-            role="button"
-            tabIndex={0}
-          >
-            <div className="m-4">
-              <div className="img-container">
-                <img
-                  className="cardImg"
-                  alt="Virus"
-                  src="images/bug.png"
-                  title="Virus"
-                />
-              </div>
-              <div>
-                <h5>Virus Simulation</h5>
-                <p className="typography">Why do I need to stay inside??</p>
-              </div>
-            </div>
-          </div>
+          <PortfolioCard
+            index={0}
+            link="https://jgf5013.github.io/virus-visualization"
+            img={{
+              src: "images/bug.png",
+              title: "Virus",
+              alt: "Virus",
+            }}
+            title="Virus Simulation"
+            subtext="Why do I need to stay inside??"
+          />
           <PortfolioCard
             index={1}
             link="https://jgf5013.github.io/planet-mapper"

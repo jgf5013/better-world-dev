@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "paths": {
       "@better-world-dev/elements": ["./web/packages/elements/src"],
-      "@better-world-dev/game": ["./web/packages/game/src"]
+      "@better-world-dev/game": ["./web/packages/game/src"],
+      "@better-world-dev/elements/styles": ["./web/packages/elements/src/lib/styles.css"]
     },
     "resolveJsonModule": true
   },

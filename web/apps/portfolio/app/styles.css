@@ -1,21 +1,7 @@
-/* dark mode */
-:root {
-  --background-rgba: 16, 55, 132, 0.85;
-  --border-rgba: 0, 0, 0, 0.5;
-  --foreground-rgba: 155, 175, 217, 0.67;
-  --text-color-rgba: 255, 255, 255, 0.67;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-rgb: 155, 175, 217, 0.67;
-    --foreground-rgba: 16, 55, 132, 0.85;
-  }
-}
-
-body {
-  background: rgba(var(--background-rgba));
+a, a:link, a:visited, a:focus, a:hover, a:active {
   color: rgba(var(--text-color-rgba));
+  text-decoration: none;
+  cursor: unset;
 }
 
 
