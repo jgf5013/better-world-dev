@@ -9,12 +9,12 @@ export const backgroundRgbaLight = createVar();
 export const foregroundRgbaLight = createVar();
 
 export const baseStyles = style({
-  '@media': {
-    '(prefers-color-scheme: light)': {
+  "@media": {
+    "(prefers-color-scheme: light)": {
       background: backgroundRgbaLight,
       color: foregroundRgbaLight,
     },
-    '(prefers-color-scheme: dark)': {
+    "(prefers-color-scheme: dark)": {
       background: backgroundRgbaDark,
       color: foregroundRgbaDark,
     },

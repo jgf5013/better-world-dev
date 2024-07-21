@@ -1,5 +1,5 @@
-import { createContext, useContext, useState } from 'react';
-import type { Dispatch, ReactNode, SetStateAction } from 'react';
+import { createContext, useContext, useState } from "react";
+import type { Dispatch, ReactNode, SetStateAction } from "react";
 
 type Lighting = {
   backgroundRgba: string
@@ -17,8 +17,8 @@ export const defaultTheme: Theme = {
     foregroundRgba: "rgba(16, 55, 132, 0.85)",
   },
   dark: {
-    backgroundRgba: 'rgba(16, 55, 132, 0.85)',
-    foregroundRgba: 'rgba(255, 255, 255, 0.67)',
+    backgroundRgba: "rgba(16, 55, 132, 0.85)",
+    foregroundRgba: "rgba(255, 255, 255, 0.67)",
   }
 };
 
@@ -37,7 +37,7 @@ function ThemeProvider({ children }: { children: ReactNode }) {
 function useTheme() {
   const context = useContext(ThemeContext);
   if (context === undefined) {
-    throw new Error('useTheme must be used within a ThemeProvider');
+    throw new Error("useTheme must be used within a ThemeProvider");
   }
   return context;
 }

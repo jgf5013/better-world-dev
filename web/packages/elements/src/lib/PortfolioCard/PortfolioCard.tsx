@@ -1,5 +1,5 @@
 // import { LinksFunction } from "@remix-run/node";
-import { assignInlineVars } from '@vanilla-extract/dynamic';
+import { assignInlineVars } from "@vanilla-extract/dynamic";
 import { useContext } from "react";
 import * as styles from "./PortfolioCard.css";
 import { ThemeContext } from "../ThemeProvider";

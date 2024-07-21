@@ -67,7 +67,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <InnerLayout>{children}</InnerLayout>
     </ThemeContext.Provider>
   );
-};
+}
 
 export default function App() {
   return <Outlet />;

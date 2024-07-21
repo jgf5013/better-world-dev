@@ -1,6 +1,6 @@
 import { Strong, Inset as RadixInset, Text as RadixText } from "@radix-ui/themes";
-import { GameCard } from '../GameCard';
-import { FlashcardType } from '@better-world-dev/game';
+import { GameCard } from "../GameCard";
+import { FlashcardType } from "@better-world-dev/game";
 
 type FlashcardPropsType = {
   card: FlashcardType;
@@ -25,7 +25,7 @@ export const FlashCard = ({card, onClick}: FlashcardPropsType) => {
   const Text = (
     <div style={{ backgroundColor: "#859398", borderRadius: "0.15rem" }}>
       <RadixText as="p" size="3">
-        <Strong>{card.sideShown === 'question' ? 'Tree Name' : card.answer}</Strong>
+        <Strong>{card.sideShown === "question" ? "Tree Name" : card.answer}</Strong>
       </RadixText>
     </div>
   );

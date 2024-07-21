@@ -1,5 +1,5 @@
-import { Box, Card as RadixCard, InsetProps as RadixInsetProps } from '@radix-ui/themes';
-import { MouseEventHandler, ReactElement } from 'react';
+import { Box, Card as RadixCard, InsetProps as RadixInsetProps } from "@radix-ui/themes";
+import { MouseEventHandler, ReactElement } from "react";
 
 type GameCardType = {
   Inset: RadixInsetProps,
