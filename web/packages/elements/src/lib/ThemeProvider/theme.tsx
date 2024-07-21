@@ -29,7 +29,7 @@ type ThemeContextType = [Theme, Dispatch<SetStateAction<Theme>>];
 const ThemeContext = createContext<ThemeContextType>([defaultTheme, portfolioThemeSetter]);
 
 function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme | null>(null);
+  const [theme, setTheme] = useState<Theme>(defaultTheme);
 
   return <ThemeContext.Provider value={[theme, setTheme]}>{children}</ThemeContext.Provider>;
 }

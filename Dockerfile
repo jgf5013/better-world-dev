@@ -10,10 +10,10 @@ RUN npm ci
 
 COPY web/apps/flashcards/ ./
 
-RUN npm run build
+RUN yarn run build
 
 ENV NODE_ENV=production
 
 # will launch the remix app when we run this Docker image.
-CMD ["npm", "run", "start"]
+CMD ["yarn", "run", "start"]
 EXPOSE 8080:8080

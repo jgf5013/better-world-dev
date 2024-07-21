@@ -6,7 +6,8 @@
   "types": "./dist/web/packages/game/src/index.d.ts",
   "scripts": {
     "build": "tsc && vite build",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@babel/core": "7.24.4",

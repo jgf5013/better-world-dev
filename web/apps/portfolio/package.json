@@ -4,10 +4,10 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
     "build": "vite build",
-    "check-types": "tsc --noEmit",
     "dev": "remix vite:dev",
-    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js"
   },
   "dependencies": {

@@ -1,0 +1,24 @@
+name: Publish and Push flashcards-remix-app:1.1 Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v0'
+        with:
+          credentials_json: '${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}'
+
+      - name: Build and Push Docker Image
+        run: |
+          docker build . --platform=linux/amd64 --tag flashcards-remix-app:1.1
+          docker tag flashcards-remix-app:1.1 gcr.io/flashcards-422320/alpine/flashcards-remix-app:1.1
+          docker push gcr.io/flashcards-422320/alpine/flashcards-remix-app:1.1

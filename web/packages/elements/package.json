@@ -5,8 +5,9 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {
-    "build": "vite build",
-    "check-types": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "build": "vite build"
   },
   "dist": {},
   "dependencies": {

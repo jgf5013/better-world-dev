@@ -38,7 +38,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
-.nx/cache
 .env
 .npmrc
 
@@ -46,5 +45,7 @@ Thumbs.db
 build
 vite.config.ts.timestamp-*
 
-# turborepo
+# turborepo / nx
 .turbo
+.nx/cache
+GOOGLE_APPLICATION_CREDENTIALS.json
