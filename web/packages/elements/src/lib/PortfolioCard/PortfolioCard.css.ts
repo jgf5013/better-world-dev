@@ -1,4 +1,4 @@
-import { createThemeContract, style } from "@vanilla-extract/css";
+import { style } from "@vanilla-extract/css";
 // import { COLORS } from '../styles.css';
 
 

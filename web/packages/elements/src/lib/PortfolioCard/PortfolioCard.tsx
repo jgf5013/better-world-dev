@@ -1,8 +1,8 @@
 // import { LinksFunction } from "@remix-run/node";
-import { assignInlineVars } from "@vanilla-extract/dynamic";
-import { useContext } from "react";
+// import { assignInlineVars } from "@vanilla-extract/dynamic";
+// import { useContext } from "react";
 import * as styles from "./PortfolioCard.css";
-import { ThemeContext } from "../ThemeProvider";
+// import { ThemeContext } from "../ThemeProvider";
 
 
 
@@ -27,7 +27,7 @@ type Props = {
 
 export const PortfolioCard = ({ link, img, title, subtext, index }: Props) => {
   
-  const [theme] = useContext(ThemeContext);
+  // const [theme] = useContext(ThemeContext);
 
 
   
