@@ -1,5 +1,41 @@
 # Changelog
 
+## [3.0.12](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.11...elements-v3.0.12) (2024-05-02)
+
+
+### Bug Fixes
+
+* tree name ([715c110](https://github.com/jgf5013/better-world-dev/commit/715c11087ec6490723fa1631dd36032aba855af2))
+
+## [3.0.11](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.10...elements-v3.0.11) (2024-05-01)
+
+
+### Bug Fixes
+
+* update ([7b17fc3](https://github.com/jgf5013/better-world-dev/commit/7b17fc34e21c3f8327a68f439f9dd3c6acdd85bc))
+
+## [3.0.10](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.9...elements-v3.0.10) (2024-04-30)
+
+
+### Bug Fixes
+
+* vite tired ([773b873](https://github.com/jgf5013/better-world-dev/commit/773b8737be82b62b61dbef28362dc4e279c1fa4f))
+
+## [3.0.9](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.8...elements-v3.0.9) (2024-04-30)
+
+
+### Bug Fixes
+
+* automatic jsx ([5087679](https://github.com/jgf5013/better-world-dev/commit/50876795868668c85f611dab74ec7c3f9a00c9c6))
+* updated package version ([81bb1b4](https://github.com/jgf5013/better-world-dev/commit/81bb1b4b14179ea8e9b461aa7c6c277fc4edbb45))
+
+## [3.0.8](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.7...elements-v3.0.8) (2024-04-30)
+
+
+### Bug Fixes
+
+* update ([b96c519](https://github.com/jgf5013/better-world-dev/commit/b96c519383b2db93463623568c62e171ccf59977))
+
 ## [3.0.7](https://github.com/jgf5013/better-world-dev/compare/elements-v3.0.6...elements-v3.0.7) (2024-04-30)
 
 

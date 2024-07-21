@@ -1,5 +1,33 @@
 # Changelog
 
+## [2.1.6](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.5...game-v2.1.6) (2024-05-02)
+
+
+### Bug Fixes
+
+* tree name ([ab2847d](https://github.com/jgf5013/better-world-dev/commit/ab2847daea7dab51cd13c876b75f7edd9dea8268))
+
+## [2.1.5](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.4...game-v2.1.5) (2024-04-30)
+
+
+### Bug Fixes
+
+* vite tired ([773b873](https://github.com/jgf5013/better-world-dev/commit/773b8737be82b62b61dbef28362dc4e279c1fa4f))
+
+## [2.1.4](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.3...game-v2.1.4) (2024-04-30)
+
+
+### Bug Fixes
+
+* automatic jsx ([5087679](https://github.com/jgf5013/better-world-dev/commit/50876795868668c85f611dab74ec7c3f9a00c9c6))
+
+## [2.1.3](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.2...game-v2.1.3) (2024-04-30)
+
+
+### Bug Fixes
+
+* publish game package ([4d4c289](https://github.com/jgf5013/better-world-dev/commit/4d4c2897598d80dbae40a53539fd28897ba190bc))
+
 ## [2.1.2](https://github.com/jgf5013/better-world-dev/compare/game-v2.1.1...game-v2.1.2) (2024-04-30)
 
 

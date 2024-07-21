@@ -1,6 +1,7 @@
 {
   "name": "@better-world-dev/elements",
-  "version": "3.0.7",
+  "version": "3.0.12",
+  "private": false,
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",

@@ -1,6 +1,7 @@
 {
   "name": "@better-world-dev/game",
-  "version": "2.1.2",
+  "version": "2.1.6",
+  "private": false,
   "type": "module",
   "main": "./dist/game.js",
   "types": "./dist/web/packages/game/src/index.d.ts",
