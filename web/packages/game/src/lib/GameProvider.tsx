@@ -1,9 +1,9 @@
 import { ReactNode, createContext, useState } from "react";
 
-import quizData from  './tree-leaves.json';
+import quizData from  "./tree-leaves.json";
 
-export type SideShown = 'question' | 'answer';
-export type QuestionType = 'image' | 'text';
+export type SideShown = "question" | "answer";
+export type QuestionType = "image" | "text";
 
 export type FlashcardType = {
   id: string;

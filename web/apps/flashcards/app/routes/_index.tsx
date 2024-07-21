@@ -1,5 +1,5 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { Flashcard } from '@better-world-dev/elements';
+import { FlashCard } from '@better-world-dev/elements';
 import { FlashcardType, GameContext } from "@better-world-dev/game";
 import { useContext } from "react";
 
@@ -25,7 +25,7 @@ export default function Index() {
       {flashcards.map((card) => {
         return (
           <div key={`flashcard-${card.id}`} className="flashcardContainer">
-            <Flashcard card={card} onClick={handleOnClick} />
+            <FlashCard card={card} onClick={handleOnClick} />
           </div>
         );
       })}

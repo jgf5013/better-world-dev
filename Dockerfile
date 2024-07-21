@@ -1,17 +1,19 @@
 FROM node:18-alpine
 
 # USER node
-WORKDIR /bwd
+WORKDIR /usr/server/app
 
-COPY package.json ./
-COPY package-lock.json ./
+COPY web/apps/flashcards/package.json ./
+COPY web/apps/flashcards/package-lock.json ./
 
-COPY . .
 RUN npm ci
-RUN npx nx run flashcards:build
 
-# COPY /bwd/web/apps/flashcards ./
-# RUN npm ci --only=production
+COPY web/apps/flashcards/ ./
 
-CMD ["npx", "nx", "run", "flashcards:start"]
-expose 3000:3000
+RUN yarn run build
+
+ENV NODE_ENV=production
+
+# will launch the remix app when we run this Docker image.
+CMD ["yarn", "run", "start"]
+EXPOSE 8080:8080

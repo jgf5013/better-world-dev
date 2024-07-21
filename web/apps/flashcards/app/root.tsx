@@ -6,8 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { GameProvider } from "@better-world-dev/game";
-import { LinksFunction } from "@remix-run/node";
-import appStyles from './styles/app.css?url';
+// import { LinksFunction } from "@remix-run/node";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -36,9 +35,3 @@ export default function App() {
     </GameProvider>
   );
 }
-
-
-
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: appStyles }
-];

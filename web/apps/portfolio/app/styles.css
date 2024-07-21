@@ -1,0 +1,28 @@
+a, a:link, a:visited, a:focus, a:hover, a:active {
+  color: rgba(var(--text-color-rgba));
+  text-decoration: none;
+  cursor: unset;
+}
+
+
+#projectsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 250px;
+  height: 90%;
+}
+
+.typography {
+  font-family: fantasy;
+}
+
+p.typography {
+  font-size: smaller;
+}
+
+h5,
+p {
+  margin: 0.75rem;
+}
