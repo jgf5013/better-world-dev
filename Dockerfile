@@ -4,7 +4,7 @@ FROM node:18-alpine
 WORKDIR /usr/server/app
 
 COPY web/apps/flashcards/package.json ./
-COPY web/apps/flashcards/package-lock.json ./
+COPY web/apps/flashcards/yarn.lock ./
 
 RUN yarn install
 

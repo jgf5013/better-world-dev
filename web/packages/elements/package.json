@@ -1,7 +1,6 @@
 {
   "name": "@better-world-dev/elements",
   "version": "3.0.12",
-  "private": false,
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -14,9 +13,10 @@
   "dependencies": {
     "@babel/core": "7.24.4",
     "@babel/preset-react": "7.24.1",
-    "@better-world-dev/game": "workspace:*",
+    "@better-world-dev/game": "*",
     "@radix-ui/themes": "^3.1.1",
     "@swc-node/register": "1.9.0",
+    "@swc/core": "^1.7.0",
     "@swc/helpers": "0.5.11",
     "@testing-library/jest-dom": "6.4.2",
     "@testing-library/react": "15.0.5",
@@ -53,6 +53,7 @@
     "vitest": "1.5.2"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
     "@vanilla-extract/css": "^1.15.3",
     "@vanilla-extract/vite-plugin": "^4.0.13"
   }

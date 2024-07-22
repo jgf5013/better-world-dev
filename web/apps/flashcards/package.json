@@ -14,12 +14,13 @@
   "dependencies": {
     "@babel/core": "7.24.4",
     "@babel/preset-react": "7.24.1",
-    "@better-world-dev/game": "workspace:*",
+    "@better-world-dev/game": "*",
     "@remix-run/css-bundle": "^2.9.1",
     "@remix-run/node": "^2.9.0",
     "@remix-run/react": "^2.9.0",
     "@remix-run/serve": "^2.9.0",
     "@swc-node/register": "1.9.0",
+    "@swc/core": "^1.7.0",
     "@swc/helpers": "0.5.11",
     "@testing-library/jest-dom": "6.4.2",
     "@testing-library/react": "15.0.5",
@@ -55,7 +56,8 @@
     "vitest": "1.5.2"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.9.0"
+    "@remix-run/dev": "^2.9.0",
+    "@testing-library/dom": "^10.4.0"
   },
   "engines": {
     "node": ">=18.0.0"
