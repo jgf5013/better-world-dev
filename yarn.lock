@@ -529,13 +529,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@better-world-dev/elements@workspace:*, @better-world-dev/elements@workspace:web/packages/elements":
+"@better-world-dev/elements@npm:*, @better-world-dev/elements@workspace:web/packages/elements":
   version: 0.0.0-use.local
   resolution: "@better-world-dev/elements@workspace:web/packages/elements"
   dependencies:
     "@babel/core": "npm:7.24.4"
     "@babel/preset-react": "npm:7.24.1"
-    "@better-world-dev/game": "workspace:*"
+    "@better-world-dev/game": "npm:*"
     "@radix-ui/themes": "npm:^3.1.1"
     "@swc-node/register": "npm:1.9.0"
     "@swc/core": "npm:^1.7.0"
@@ -585,7 +585,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:7.24.4"
     "@babel/preset-react": "npm:7.24.1"
-    "@better-world-dev/game": "workspace:*"
+    "@better-world-dev/game": "npm:*"
     "@remix-run/css-bundle": "npm:^2.9.1"
     "@remix-run/dev": "npm:^2.9.0"
     "@remix-run/node": "npm:^2.9.0"
@@ -630,7 +630,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@better-world-dev/game@workspace:*, @better-world-dev/game@workspace:web/packages/game":
+"@better-world-dev/game@npm:*, @better-world-dev/game@workspace:web/packages/game":
   version: 0.0.0-use.local
   resolution: "@better-world-dev/game@workspace:web/packages/game"
   dependencies:
@@ -681,8 +681,8 @@ __metadata:
   dependencies:
     "@babel/core": "npm:7.24.4"
     "@babel/preset-react": "npm:7.24.1"
-    "@better-world-dev/elements": "workspace:*"
-    "@better-world-dev/game": "workspace:*"
+    "@better-world-dev/elements": "npm:*"
+    "@better-world-dev/game": "npm:*"
     "@remix-run/css-bundle": "npm:^2.9.1"
     "@remix-run/dev": "npm:^2.10.0"
     "@remix-run/node": "npm:^2.10.0"
