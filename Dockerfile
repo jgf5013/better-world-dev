@@ -6,7 +6,7 @@ WORKDIR /usr/server/app
 COPY web/apps/flashcards/package.json ./
 COPY web/apps/flashcards/package-lock.json ./
 
-RUN npm ci
+RUN yarn install
 
 COPY web/apps/flashcards/ ./
 
